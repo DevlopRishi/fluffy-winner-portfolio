@@ -3,140 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rishi Gavel - Limitless Portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-
-    <div class="preloader">
-       <div class="loader">
-            <span></span>
-            <span></span>
-            <span></span>
-         </div>
+    <div class="cli-container">
+        <div class="terminal">
+            <div class="background-glow"></div>
+            <div class="banner">
+                <h1>Hi, this is Rishi <i class="fas fa-terminal"></i></h1>
+                <p>Type <span class="highlight">help</span> to see available commands</p>
+            </div>
+            <div class="output-container"></div>
+            <div class="input-container">
+                <span class="prompt">λ :: ~ >></span>
+                <input type="text" class="cli-input" autofocus />
+            </div>
+        </div>
     </div>
-    <div class="page-wrapper">
-
-    <header>
-        <nav>
-            <div class="logo">RG</div>
-            <ul class="nav-links">
-                <li><a href="#about" data-scroll>About</a></li>
-                <li><a href="#creations" data-scroll>Creations</a></li>
-                <li><a href="blog.html" data-scroll>Blog</a></li>
-                <li><a href="#contact" data-scroll>Contact</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-        </nav>
-    </header>
-
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Hi, I'm Rishi Gavel</h1>
-            <p class="hero-subtitle">A 10th grade student with a deep love for technology.</p>
-            <a href="#creations" class="btn btn-primary">Explore My Creations</a>
-        </div>
-        <div class="hero-image-wrapper">
-          <img src="hero.jpg" alt="Hero Image" class="hero-image"/>
-        </div>
-        <div class="hero-overlay"></div>
-    </section>
-
-    <section id="about" class="about">
-        <div class="section-title-wrapper">
-          <h2 class="section-title">About Me</h2>
-          <div class="title-line"></div>
-       </div>
-
-        <div class="about-content">
-            <div class="image-container">
-               <img src="profile.jpg" alt="Rishi Gavel" class="profile-img"/>
-            </div>
-
-            <div class="text-container">
-                 <p>Hello there! I'm Rishi, a passionate 10th-grade student who finds joy in the world of technology. From coding to graphic design, I love exploring and creating with digital tools. </p>
-
-                <p>This portfolio showcases some of the projects I've worked on so far, reflecting my skills and interests. Take a look around and feel free to connect with me!</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="creations" class="creations">
-       <div class="section-title-wrapper">
-            <h2 class="section-title">My Creations</h2>
-            <div class="title-line"></div>
-        </div>
-        <div class="creations-grid">
-             <div class="creation-item">
-               <div class="creation-image-wrapper">
-                   <img src="github.png" alt="GitHub Logo" class="creation-image">
-                </div>
-               <div class="creation-text">
-                  <h3>GitHub Profile</h3>
-                  <p>Explore my code and projects on GitHub</p>
-                  <a href="https://github.com/yourusername" target="_blank" class="btn btn-secondary">View GitHub</a>
-               </div>
-           </div>
-          <div class="creation-item">
-            <div class="creation-image-wrapper">
-                <img src="graphic.png" alt="Graphic Design" class="creation-image">
-             </div>
-             <div class="creation-text">
-                <h3>Graphic Design</h3>
-               <p>Check out some of my graphic design work</p>
-               <a href="graphic-design.html" class="btn btn-secondary">View Graphics</a>
-            </div>
-         </div>
-        </div>
-    </section>
-
-     <section class="parallax" data-parallax="scroll" data-image-src="parallax-background.jpg">
-          <div class="parallax-content">
-                <h2>Unleash Your Creative Potential</h2>
-                <p>Step into a world where technology and artistry converge.</p>
-          </div>
-      </section>
-
-    <section id="blog" class="blog">
-        <div class="section-title-wrapper">
-            <h2 class="section-title">Blog</h2>
-             <div class="title-line"></div>
-        </div>
-        <p class="blog-message">Stay tuned for my blog posts where I'll share my thoughts, experiences, and more about the world of tech.</p>
-        <a href="blog.html" class="btn btn-primary">Visit Blog</a>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="section-title-wrapper">
-             <h2 class="section-title">Contact Me</h2>
-              <div class="title-line"></div>
-        </div>
-         <div class="contact-content">
-            <p>I'm always open to new connections and discussions. Feel free to reach out!</p>
-                <ul class="contact-list">
-                    <li><i class="fas fa-envelope"></i>  <strong>Email:</strong> <a href="mailto:your@email.com">your@email.com</a></li>
-                     <li><i class="fab fa-instagram"></i>  <strong>Instagram:</strong> <a href="https://www.instagram.com/yourinstagram" target="_blank">@yourinstagram</a></li>
-                </ul>
-         </div>
-    </section>
-
-
-    <footer>
-        <p>&copy; 2024 Rishi Gavel. All rights reserved.</p>
-    </footer>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
-
 </body>
 </html>
