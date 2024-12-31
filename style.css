@@ -3,30 +3,30 @@
 
 :root {
     --background: rgba(26, 27, 38, 0.8);
-     --backdrop: blur(18px);
-     --shadow: rgba(0, 0, 0, 0.5);
-     --text: #a9b1d6;
-     --highlight: #bb9af7;
-     --green: #9ece6a;
-     --orange: #e0af68;
-     --error: #f7768e;
-     --grey: #565f89;
-     --border: rgba(255, 255, 255, 0.1);
-     --glow: rgba(100, 100, 255, 0.3);
- }
+    --backdrop: blur(18px);
+    --shadow: rgba(0, 0, 0, 0.5);
+    --text: #a9b1d6;
+    --highlight: #bb9af7;
+    --green: #9ece6a;
+    --orange: #e0af68;
+    --error: #f7768e;
+    --grey: #565f89;
+    --border: rgba(255, 255, 255, 0.1);
+    --glow: rgba(100, 100, 255, 0.3);
+}
 
 html, body {
-  margin: 0;
-  padding: 0;
-  font-family: "Fira Code", monospace;
-  background: var(--background);
-  color: var(--text);
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABOSURBVEhL7dYxCoAgDETx99/8W4hN6oI7b2y80o0g0fA/g4aEwZggwYQwg0Fj7t624M3s/2a24A7sP90r9/j8h/5Qn0wK7k/5Q9/wAAAAASUVORK5CYII='), auto;
+    margin: 0;
+    padding: 0;
+    font-family: "Fira Code", monospace;
+    background: var(--background);
+    color: var(--text);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABOSURBVEhL7dYxCoAgDETx99/8W4hN6oI7b2y80o0g0fA/g4aEwZggwYQwg0Fj7t624M3s/2a24A7sP90r9/j8h/5Qn0wK7k/5Q9/wAAAAASUVORK5CYII='), auto;
 }
 
 .cli-container {
@@ -123,7 +123,6 @@ html, body {
     text-shadow: 0 0 8px var(--glow);
 }
 
-
 /* Scrollbar styling */
 ::-webkit-scrollbar {
     width: 6px;
@@ -147,4 +146,51 @@ pre {
 
 .icon {
     margin-right: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cli-container {
+        width: 100%;
+        height: 100%;
+        padding: 0 8px;
+    }
+
+    .terminal {
+        padding: 16px;
+        border-radius: 12px;
+    }
+
+    .banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .cli-input {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cli-container {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .terminal {
+        padding: 8px;
+        border-radius: 8px;
+    }
+
+    .banner h1 {
+        font-size: 1.25rem;
+    }
+
+    .cli-input {
+        font-size: 12px;
+    }
+
+    .background-glow {
+        filter: blur(100px);
+    }
 }
